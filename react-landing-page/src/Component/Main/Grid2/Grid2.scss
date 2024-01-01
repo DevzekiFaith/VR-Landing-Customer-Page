@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cc-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Grid2Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  // position: relative;
+
+  & .Nature {
+    font-size: .7rem;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Alata";
+    width: 120px;
+    // position: absolute;
+    top: 24rem;
+    margin-left: 8rem;
+  }
+}
+
+
+
+
+@media (max-width: 425px) {
+  .Grid2Flex{
+    flex-direction: column;
+
+
+    & .PropsImage{
+      width: 120%;
+      height: 54vh;
+      max-width: 320px;
+      margin-left: -1.5rem;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cc-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+
+.Sect2Div {
+  background-color: white;
+  margin-top: 3rem;
+  position: relative;
+  margin-bottom: 4rem;
+
+
+
+  & .Sect2DivContent {
+    // background-color: white;
+    width: 650px;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    
+
+    img{
+      width: 100%;
+      margin-left: 10rem;
+    }
+  }
+
+  & .Sect2DivAbsolute{
+    background-color: hsl(0, 0%, 100%);
+    width: 550px;
+    padding: 2rem;
+    position: absolute;
+    top: 10rem;
+    right: 12rem;
+    height: 41vh;
+
+
+    & .AbsoluteContent{
+      margin-left: 3rem;
+      margin-top: 3rem;
+      h1{
+        text-transform: uppercase;
+        width: 220px;
+        font-family: "josefin Sans";
+        color: hsl(0, 0%, 0%);
+        font-weight: 400;
+        font-size: 18px;
+        font-size: 1.58rem;
+      }
+  
+      p{
+        width: 400px;
+        font-family: "josefin Sans";
+        font-size: 18px;
+        color:  hsl(0, 0%, 55%);
+      }
+    }
+    
+
+
+
+  }
+}
+
+
+
+
+
+@media (max-width: 425px) {
+  .Sect2Div{
+    padding: 0;
+    margin: 0;
+
+
+    & .Sect2DivContent{
+      width: 410px;
+
+
+      img{
+        margin-left: -.1rem;
+        width: 80%;
+      }
+    }
+
+    & .Sect2DivAbsolute{
+      position: absolute;
+      top: 12rem;
+      right: -8rem;
+      height: 50vh;
+
+
+      & .AbsoluteContent{
+        
+
+
+        h1{
+          text-align: center;
+          margin-left: 2rem;
+        }
+
+        p{
+          width: 250px;
+          text-align: center;
+          margin-left: 2rem;
+        }
+      }
+    }
+
+  }
+}

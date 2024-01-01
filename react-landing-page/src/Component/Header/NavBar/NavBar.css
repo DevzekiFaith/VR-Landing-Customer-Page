@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cc-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.NavBarFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+.NavBarFlex .NavPhoto {
+  margin-left: 10rem;
+  margin-top: 2rem;
+  width: 8rem;
+}
+.NavBarFlex .Burger {
+  display: none;
+}
+.NavBarFlex ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 2.7rem;
+  right: 14rem;
+}
+.NavBarFlex ul li {
+  list-style: none;
+  font-family: "josefin Sans";
+}
+.NavBarFlex ul a {
+  color: white;
+}
+.NavBarFlex .NavImage {
+  background: url("../../../assets/image-hero.jpg");
+  background-image: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  margin-top: 1rem;
+}
+.NavBarFlex .NavContent {
+  position: absolute;
+  left: 12rem;
+  border: 2px solid white;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+.NavBarFlex .NavContent h1 {
+  font-size: 38px;
+  width: 300px;
+  color: white;
+  text-transform: uppercase;
+  word-spacing: 0.4rem;
+  font-family: "Alata";
+  font-weight: 400;
+  line-height: 42px;
+}
+
+@media (max-width: 425px) {
+  .NavBarFlex {
+    padding: 0;
+    margin: 0;
+  }
+  .NavBarFlex .NavPhoto {
+    margin-left: 1rem;
+  }
+  .NavBarFlex li {
+    display: none;
+  }
+  .NavBarFlex .NavContent {
+    position: absolute;
+    left: 4rem;
+  }
+  .NavBarFlex .NavContent h1 {
+    width: 210px;
+  }
+  .NavBarFlex ul {
+    position: absolute;
+    right: 4rem;
+    top: 3rem;
+  }
+  .NavBarFlex .Burger {
+    display: block;
+  }
+}

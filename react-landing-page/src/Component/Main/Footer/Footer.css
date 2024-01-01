@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cc-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.GeneralFooter {
+  position: relative;
+}
+.GeneralFooter .FooterSide {
+  background-color: rgb(203, 112, 213);
+  height: 150px;
+}
+.GeneralFooter .FooterSide img {
+  width: 140px;
+  padding-top: 2rem;
+  margin-left: 5rem;
+}
+.GeneralFooter .FooterSide ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 5rem;
+}
+.GeneralFooter .FooterSide ul li {
+  font-size: 12px;
+  font-family: "Alata";
+  margin-top: 1rem;
+}
+.GeneralFooter .FooterSide ul a {
+  color: white;
+}
+.GeneralFooter .FooterContent {
+  position: absolute;
+  top: 2.5rem;
+  right: 5rem;
+}
+.GeneralFooter .FooterContent ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.GeneralFooter .FooterContent ul img {
+  width: 16px;
+}
+.GeneralFooter .FooterContent p {
+  font-size: 10px;
+  padding-top: 1rem;
+  color: white;
+}
+
+@media (max-width: 425px) {
+  .GeneralFooter {
+    position: relative;
+  }
+  .GeneralFooter .FooterSide {
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: -4rem;
+  }
+  .GeneralFooter .FooterSide img {
+    width: 140px;
+    margin-left: 8.8rem;
+  }
+  .GeneralFooter .FooterSide ul {
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .GeneralFooter .FooterSide a {
+    font-size: 16px;
+  }
+  .GeneralFooter .FooterSide li {
+    font-size: 12px;
+    list-style: none;
+  }
+  .GeneralFooter .FooterContent {
+    position: absolute;
+    top: 20rem;
+  }
+  .GeneralFooter .FooterContent ul {
+    justify-content: flex-start;
+    margin-left: 3rem;
+  }
+  .GeneralFooter .FooterContent p {
+    font-size: 12px;
+  }
+}

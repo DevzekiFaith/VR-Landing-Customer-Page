@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cc-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.GeneralFooter {
+  // background-color: pink;
+  position: relative;
+  & .FooterSide {
+    background-color: rgb(203, 112, 213);
+    height: 150px;
+
+    img {
+      width: 140px;
+      padding-top: 2rem;
+      margin-left: 5rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      margin-left: 5rem;
+
+      li {
+        font-size: 12px;
+        font-family: "Alata";
+        margin-top: 1rem;
+      }
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  & .FooterContent {
+    position: absolute;
+    top: 2.5rem;
+    right: 5rem;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+
+      img {
+        width: 16px;
+      }
+    }
+
+    p {
+      font-size: 10px;
+      padding-top: 1rem;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .GeneralFooter {
+    position: relative;
+    & .FooterSide {
+      height: 400px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      margin-top: -4rem;
+
+      img {
+        width: 140px;
+        margin-left: 8.8rem;
+      }
+
+      ul {
+        flex-direction: column;
+        gap: 0.4rem;
+        text-align: center;
+        margin-left: 1rem;
+      }
+
+      a {
+        font-size: 16px;
+      }
+
+      li {
+        font-size: 12px;
+        list-style: none;
+      }
+    }
+
+    & .FooterContent {
+      position: absolute;
+      top: 20rem;
+
+      ul {
+        justify-content: flex-start;
+        margin-left: 3rem;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
